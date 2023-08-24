@@ -48,15 +48,18 @@ const HW14 = () => {
     }
 
     const onChangeText = (value: string) => {
-        setFind(value)
+       setFind(value)
+        setSearchParams({find:value})
+
         // делает студент
 
         // добавить/заменить значение в квери урла
-       setSearchParams({find:value})
+
         //
     }
 
     useEffect(() => {
+        console.log('sasdd')
         const params = Object.fromEntries(searchParams)
         sendQuery(params.find || '')
         setFind(params.find || '')
