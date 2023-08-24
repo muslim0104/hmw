@@ -1,0 +1,45 @@
+.button {
+    background-color: white;
+    color: #007bff;
+    border: 1px #007bff solid ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px;
+}
+
+.disabled {
+}
+
+.secondary {
+}
+
+.default {
+}
+
+.red {
+}
+
+.default:hover {
+}
+
+.red:hover {
+}
+
+.secondary:hover {
+}
+
+
+.default:active {
+}
+
+.secondary:active {
+}
+
+.red:active {
+}
+
+.button:disabled {
+}

@@ -1,0 +1,38 @@
+import React from 'react'
+import HW11 from "../../hw11/HW11";
+import HW12 from "../../hw12/HW12";
+import HW13 from "../../hw13/HW13";
+import HW14 from "../../hw14/HW14";
+import HW15 from "../../hw15/HW15";
+import {Sidebar} from "../sidebar/Sidebar";
+// import HW10 from '../../hw10/HW10'
+// import HW11 from '../../hw11/HW11'
+// import HW12 from '../../hw12/HW12'
+// import HW13 from '../../hw13/HW13'
+// import HW14 from '../../hw14/HW14'
+// import HW15 from '../../hw15/HW15'
+import s from './JuniorPlus.module.css'
+import HW10 from "../../hw10/HW10";
+import HW9 from "../../hw09/HW9";
+import HW8 from "../../hw08/HW8";
+
+function JuniorPlus() {
+
+
+    return (
+
+        <div className={s.main}>
+            {/*<HW8/>*/}
+            {/* <HW9/>*/}
+            <HW10 />
+            {/*<HW11 />*/}
+            <HW12 />
+            <HW13 />
+            <HW14/>
+            <HW15/>
+
+        </div>
+    )
+}
+
+export default JuniorPlus

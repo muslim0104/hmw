@@ -1,0 +1,37 @@
+.sidebar {
+    display: none;
+    width: 240px;
+    background-color: #fffaf8;
+    padding: 20px;
+    color: #110808;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.open {
+display:block;
+}
+
+.background {
+}
+
+.nav {
+}
+
+.nav a {
+
+   text-decoration: none;
+
+}
+
+.nav a:hover {
+}
+
+.nav a.active {
+}
+.close {
+    background-color: #fffaf8;
+    color: white;
+}
+
+.close img {
+}

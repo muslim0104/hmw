@@ -1,0 +1,33 @@
+.buttonsContainer {
+}
+
+.responseContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+
+}
+
+.image {
+}
+
+.textContainer{
+
+
+}
+
+.code {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12px;
+}
+
+.text, .info {
+    font-size: 20px;
+    font-weight: 500;
+
+}

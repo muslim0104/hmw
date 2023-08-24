@@ -1,0 +1,40 @@
+.hwTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hw {
+    margin-top: 20px;
+}
+
+
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.users {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+
+}
+
+.thead {
+    background-color: #f5f5f5;
+}
+
+.nameCol,
+.ageCol {
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.ageCol {
+    text-align: center;
+}
