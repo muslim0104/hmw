@@ -84,6 +84,7 @@ const HW15 = () => {
         // делает студент
         setSort(newSort)
         setPage(1) // при сортировке сбрасывать на 1 страницу
+        setSearchParams(newSort)
 
         sendQuery({sort:newSort})
 
