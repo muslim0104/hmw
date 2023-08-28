@@ -15,9 +15,12 @@ export type SuperSortPropsType = {
 }
 
 export const pureChange = (sort: string, down: string, up: string): string => {
-    if (sort === down) {
-        return  up
-    } else if (sort === up) {
+    if (sort === '') {
+        return  down
+    } else if (sort === down) {
+        return up
+    }
+    else if (sort===up){
         return ''
     }
     else {
