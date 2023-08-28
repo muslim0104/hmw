@@ -15,7 +15,7 @@ export type SuperSortPropsType = {
 }
 
 export const pureChange = (sort: string, down: string, up: string): string => {
-    console.log(sort)
+    console.log('sort', sort, down, up)
     if (sort === '') {
         return  down
     } else if (sort === down) {
@@ -40,7 +40,7 @@ const SuperSort: React.FC<SuperSortPropsType> = (
 
     const onChangeCallback = () => {
 
-        onChange(  pureChange(sort,up,down) )
+        onChange(  pureChange(sort,down,up) )
     }
 
     const icon = sort === up
