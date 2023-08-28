@@ -60,6 +60,7 @@ const HW15 = () => {
                    if (res.data){
                        setTechs(res.data.techs)
                        setTotalCount(res.data.totalCount)
+
                    }
                }
 
