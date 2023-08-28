@@ -69,9 +69,19 @@ const HW15 = () => {
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
-     setPage(newPage)
+        setPage(newPage)
         setCount(newCount)
-        sendQuery({page:newPage,count:newCount})
+
+        const pageQuery: {page?:string} = newPage !== 1 ? {page: newPage + ''} : {}
+        const countQuery: {count?:string} = newCount !== 4 ? {count: newCount + ''} : {}
+        const {page, count, ...restQueries} = Object.fromEntries(searchParams)
+
+        const allQuery = {...restQueries, ...pageQuery, ...countQuery}
+
+
+
+        sendQuery(allQuery)
+        setSearchParams(allQuery)
 
 
 
