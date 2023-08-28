@@ -3,7 +3,7 @@ import {IconButton, TableCell} from "@mui/material";
 import {KeyboardArrowDown, KeyboardArrowUp} from "@mui/icons-material";
 
 // добавить в проект иконки и импортировать
-const downIcon ="🔽"
+const downIcon = "🔽"
 const upIcon = '🔼'
 const noneIcon = '🔷'
 
@@ -16,17 +16,22 @@ export type SuperSortPropsType = {
 
 export const pureChange = (sort: string, down: string, up: string): string => {
     console.log('sort', sort, down, up)
-    if (sort === '') {
-        return  down
-    } else if (sort === down) {
-        return up
-    }
-    else if (sort===up){
-        return ''
-    }
-    else {
-         return down;
-    }
+    // if (sort === '') {
+    //     return  down
+    // } else if (sort === down) {
+    //     return up
+    // }
+    // else if (sort===up){
+    //     return ''
+    // }
+    // else {
+    //      return down;
+    // }
+    return sort === down
+        ? up
+        : sort === up
+            ? ''
+            : down
 }
 const SuperSort: React.FC<SuperSortPropsType> = (
     {
@@ -40,14 +45,14 @@ const SuperSort: React.FC<SuperSortPropsType> = (
 
     const onChangeCallback = () => {
 
-        onChange(  pureChange(sort,down,up) )
+        onChange(pureChange(sort, down, up))
     }
 
-    const icon = sort === up
+    const icon = sort === down
         ? downIcon
-        : sort === down
-            ? noneIcon
-            : upIcon
+        : sort === up
+            ? upIcon
+            : noneIcon
 
     return (
         <span
